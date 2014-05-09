@@ -1,0 +1,23 @@
+{
+  "name": "markdown-slider",
+  "version": "0.0.1",
+  "description": "make a slider show like PowerPoint\\Keynote using markdown format.",
+  "main": "grunt",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jpssff/markdown-slider.git"
+  },
+  "keywords": [
+    "ppt",
+    "Keynote",
+    "PowerPoint"
+  ],
+  "author": "fengweifeng <jpssff@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jpssff/markdown-slider/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4"
+  }
+}

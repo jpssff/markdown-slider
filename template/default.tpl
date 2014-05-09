@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title><%= title %></title>
+        <style type="text/css" media="screen">
+            body{margin:0;padding:0;}
+            .slider-container{width:80%;height:100%;margin:0 auto;/*border:1px solid #fff;*/}
+            .slider-page{width:100%;height:100%;display:none;font-size:18px;}
+            .slider h1{font-size:5em;text-align:center;line-height:4em;}
+            .slider h2{font-size:2.5em;line-height:1.1em;margin-top:0.3em;}
+            .slider h3{font-size:1.8em;line-height:1.2em;margin-top:0.3em;}
+            .slider li{font-size:1.6em;line-height:1.5em;}
+            .slider p{font-size:1.2em;line-height:1.4em;}
+            .slider code {background:#FFEBB3;border-radius:5px;padding:0 .3em;}
+            .slider pre code{background:none;border-radius:0;padding:0;}
+            .slider pre{font-size:1.2em;line-height:1.4em;background:#ddd;
+                border-radius:5px;padding:.4em;
+                font-family:Consolas, Yahei consolas hybrid, Monaco, Andale Mono, monospace}
+        </style>
+        <script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/1-8-0/esl.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+            require.config({
+                'baseUrl': '../lib'
+            });
+        </script>
+    </head>
+    <body>
+        <pre style="display:none;"><textarea id="ppt" style="display:none;"><%= content %></textarea></pre>
+    </body>
+    <script type="text/javascript" charset="utf-8">
+        require(['slider'], function(slider){
+            slider.init(document.getElementById('ppt').value);
+        });
+    </script>
+</html>
