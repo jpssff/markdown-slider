@@ -26,3 +26,10 @@ markdown-slider
     open slide/amd.html
   
 或者点到目录中，使用浏览器打开对应的页面。
+
+
+## api
+
+    require(['slider'], function(slider){
+        slider.init('markdown text', domElement);
+    });
