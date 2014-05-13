@@ -79,7 +79,7 @@
 
 习惯用命令行，推荐使用安装[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) 并启用git插件。
 
-gui，可以使用`gg`,简单够用。
+gui，可以使用`git gui citool`,简单够用。
 
 ******************************************************
 
