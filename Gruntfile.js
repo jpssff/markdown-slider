@@ -28,7 +28,7 @@ module.exports = function (grunt) {
         var path = require('path');
         this.files.forEach(function(file){
             file.src.forEach(function(filePath){
-                var tpl = grunt.file.read('./template/default.tpl'),
+                var tpl = grunt.file.read('./template/default.html'),
                     content = grunt.file.read(filePath),
                     title = path.basename(filePath, '.md'),
                     html = grunt.util._.template(tpl, {title:title, content:content}),

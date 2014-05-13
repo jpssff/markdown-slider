@@ -33,3 +33,16 @@ markdown-slider
     require(['slider'], function(slider){
         slider.init('markdown text', domElement);
     });
+
+## 实时查看
+
+在根目录下启动http服务：
+
+    cd markdown-slider
+    python -m SimpleHTTPServer
+
+浏览器打开页面：
+
+    http://127.0.0.1:8000/template/default.html?file=../text/amd.md
+
+就可以看到最终效果了。

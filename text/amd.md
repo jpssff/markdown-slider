@@ -29,6 +29,7 @@
 
     npm config set proxy=http://172.19.1.2:9217
 
+
 ******************************************************
 
 ## git
@@ -46,6 +47,8 @@
     git add file
     git commit -am "comment"
     git push origin ps
+
+[推荐教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 ******************************************************
 
@@ -74,19 +77,24 @@
 7. Release
 8. 上线到www
 
+习惯用命令行，推荐使用安装[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) 并启用git插件。
+
+gui，可以使用`gg`,简单够用。
+
 ******************************************************
 
 ## 开发前准备(1)
 
 ### 规范
 
-* [AMD包规范](https://github.com/ecomfe/spec/blob/master/package.md)
+* AMD[模块、加载器规范](https://github.com/ecomfe/spec/blob/master/module.md)、[目录规范](https://github.com/ecomfe/spec/blob/master/package.md)
 * [js编码规范](https://github.com/ecomfe/spec/blob/master/javascript-code-style.md)
 * [less编码规范](https://github.com/ecomfe/spec/blob/master/less-code-style.md)
 
 ### 工具
 
 * [Less](http://lesscss.org/)
+* [Less Lint](http://kevinsawicki.github.io/grunt-lesslint/)
 * [CSS Lint](https://github.com/CSSLint/csslint)
 * [JSLint](http://jslint.com/)
 * [JSDoc](http://usejsdoc.org/)
@@ -97,7 +105,7 @@
 
 ## 开发前准备(2)
 
-## 框架
+### 框架
 
 www结果页已经包含的：
 
@@ -118,6 +126,7 @@ www结果页已经包含的：
 * package.json
 * npm install xxx --save/--save-dev
 * npm help
+* npm docs xxx
 
 ### 常用目录名 
 
@@ -131,11 +140,72 @@ www结果页已经包含的：
 
 ******************************************************
 
+## 开发前准备(4)
+
+### 准备代码
+
+    git clone git@github.com:ecomfe/moye.git
+    cd moye
+    git checkout ps
+    sudo npm install
+    grunt --help
+    grunt test-online
+
+### 代码结构
+
+    ├── CHANGELOG.md  
+    ├── Gruntfile.js
+    ├── README.md
+    ├── SpecRunner.html
+    ├── package.json
+    ├── src
+    │   ├── css
+    │   └── ui
+    ├── example
+    │   ├── Calendar.html
+    │   ├── CalendarExtension.html
+    │   ├── ...
+    ├── node_modules
+    │   ├── grunt
+    │   ├── grunt-contrib-clean
+    │   ├── ...
+    └── test
+        ├── config.js
+        ├── main.js
+        ├── spec
+        └── template
+
+******************************************************
+## 开发前准备(5)
+
+### 配置编辑器
+
+.editorconfig
+
+    root = true
+
+    [*]
+    end_of_line = lf
+    charset = utf-8
+    trim_trailing_whitespace = true
+    insert_final_newline = true
+    indent_style = space
+    indent_size = 4
+
+    [*.md]
+    trim_trailing_whitespace = false
+
+
+<http://editorconfig.org/>
+
+
+******************************************************
+
 ## 开发一个组件(1)
 
 ### 开发代码
 
-文件：
+增加一个组件，一般需要增加如下文件：
 
     src/ui/Foo.js        组件js
     src/css/Foo.less     组件样式
@@ -253,6 +323,14 @@ FooSpec.js
 
     npm install node-inspector
     node-debug script.js
+
+******************************************************
+## 相关链接
+
+<https://travis-ci.org/ecomfe/moye>
+
+
+
 
 ******************************************************
 再见
