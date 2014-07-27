@@ -115,4 +115,5 @@
 * [vim.org](http://www.vim.org/)
 * [Vim Tip Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki)
 * [Vim Awesome](http://vimawesome.com/)
+* [vim-bundler](https://github.com/tpope/vim-bundler)
 
