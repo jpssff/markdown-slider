@@ -1,8 +1,19 @@
 # Bash Shell 基础
+
+<fengweifeng@baidu.com>
+
 *************************
 ## 大纲
 
-*
+* 开始
+* 命令
+* 变量
+* 复合命令
+* Shell扩展
+* 标准输入/输出/错误
+* 常用命令
+* sed, awk
+* 扩展阅读
 
 *************************
 
@@ -203,10 +214,17 @@ select:
 
 
 *************************
-## sed
+## sed, awk
 
-*************************
-## awk
+都是文本处理的神级软件, 一般简易文本处理两者都可以胜任,awk对于多列数据/复杂场景更具优势.
+
+参考文档:
+
+* `man sed` 
+* `man awk`
+* [相同的需求使用sed/awk分别实现](http://wenku.baidu.com/view/35521b06cc175527072208b5.html)
+* [sed学习笔记](http://man.lupaworld.com/content/manage/ringkee/sed.htm)
+* [awk学习笔记](http://man.lupaworld.com/content/manage/ringkee/awk.htm)
 
 *************************
 ## 示例
@@ -224,10 +242,3 @@ select:
 * [Bash it](https://github.com/revans/bash-it)
 * 使用zsh代替bash[Oh-my-zsh](http://ohmyz.sh/)
 * windows下使用bash, 下载[babun](http://projects.reficio.org/babun/babun-dist.zip)
-
-*************************
-*************************
-*************************
-*************************
-*************************
-*************************

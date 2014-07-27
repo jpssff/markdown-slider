@@ -1,5 +1,7 @@
 # AMD组件开发
-<center>fengweifeng@baidu.com</center>
+
+<fengweifeng@baidu.com>
+
 ******************************************************
 ## 概述
 
