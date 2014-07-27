@@ -219,6 +219,7 @@ select:
 *************************
 ## 延伸阅读
 
+* `man bash`
 * [高级Bash脚本编程指南](http://wenku.baidu.com/view/0562449f51e79b896802261f.html)
 * [Bash it](https://github.com/revans/bash-it)
 * 使用zsh代替bash[Oh-my-zsh](http://ohmyz.sh/)
