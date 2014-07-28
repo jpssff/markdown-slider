@@ -203,13 +203,13 @@ select:
 *************************
 ## 常用命令
 
-* ls, cd, cp, rm, mv, diff, ln, pwd, mkdir, rmdir, cat
+* ls, cd, cp, rm, mv, diff, `colordiff`, ln, pwd, mkdir, rmdir, cat
 * `find`, locate
 * `grep`, `sed`, `awk`
-* more, less, tail, head, wc
+* more, less, tail, head, wc, sort, uniq, `xargs`
 * date, df, free, du, top, vmstat, ps, pstree, kill, nestat, ssh, scp
 * su, who, whoami
-* wget, crontab, jobs, fg, bg
+* wget, curl, crontab, jobs, fg, bg
 * `expect`
 
 
