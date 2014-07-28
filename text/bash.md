@@ -230,8 +230,10 @@ select:
 ## 示例
 
 * 查找替换线下地址(sed)
-* 
-
+* 快速添加到svn(svn+awk)
+* 查找文件并进行操作(find)
+* 日志过滤(tail+grep)
+* 定时同步模板(crontab+except+ssh+scp)
 
 
 *************************
